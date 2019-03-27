@@ -1,0 +1,50 @@
+﻿<Project Sdk="MSBuild.Sdk.Extras/1.6.68">
+
+  <PropertyGroup>
+    <TargetFrameworks>net45</TargetFrameworks>
+    <Version>0.0.1</Version>
+    <PackageLicenseUrl>https://github.com/qtbui159/QtMvvm.WPF/blob/master/LICENSE</PackageLicenseUrl>
+    <Copyright>qtbui159</Copyright>
+    <Description>一个简单易用的Mvvm框架，用于WPF
+灵感来源为Prism</Description>
+    <PackageProjectUrl>https://github.com/qtbui159/QtMvvm.WPF</PackageProjectUrl>
+    <PackageReleaseNotes>V0.0.1 Have fun</PackageReleaseNotes>
+
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net45|AnyCPU'">
+    <DocumentationFile>bin\Release\QtMvvm.WPF.xml</DocumentationFile>
+    <OutputPath>bin\Release\</OutputPath>
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net45|AnyCPU'">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>bin\Debug\QtMvvm.WPF.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Dialog\DefaultDialogs\DefaultDialog.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="lib/net45/System.Windows.Interactivity.dll" Pack="true" PackagePath="lib/net45/" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="Dialog\DefaultDialogs\DefaultDialog.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System.Windows.Interactivity">
+      <HintPath>lib/net45/System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+</Project>
