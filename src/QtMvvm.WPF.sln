@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.539
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QtMvvm.WPF", "QtMvvm.WPF\QtMvvm.WPF.csproj", "{571D6ACD-F27E-4ACE-B96E-C732FAA2AC46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QtMvvm.WPF", "QtMvvm.WPF\QtMvvm.WPF.csproj", "{571D6ACD-F27E-4ACE-B96E-C732FAA2AC46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "Sample\Example.csproj", "{DDBBCEE3-DE25-46BF-9473-2687EA16BB62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleA", "ModuleA\ModuleA.csproj", "{96EC27F3-757A-4005-AEE5-EDBD4B3357BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{571D6ACD-F27E-4ACE-B96E-C732FAA2AC46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{571D6ACD-F27E-4ACE-B96E-C732FAA2AC46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{571D6ACD-F27E-4ACE-B96E-C732FAA2AC46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDBBCEE3-DE25-46BF-9473-2687EA16BB62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDBBCEE3-DE25-46BF-9473-2687EA16BB62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDBBCEE3-DE25-46BF-9473-2687EA16BB62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDBBCEE3-DE25-46BF-9473-2687EA16BB62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96EC27F3-757A-4005-AEE5-EDBD4B3357BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96EC27F3-757A-4005-AEE5-EDBD4B3357BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96EC27F3-757A-4005-AEE5-EDBD4B3357BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96EC27F3-757A-4005-AEE5-EDBD4B3357BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
