@@ -10,11 +10,6 @@ namespace QtMvvm.WPF.Dialog
 {
     public class DialogRequest
     {
-        #region 属性
-
-
-        #endregion
-
         public Window InnerWindow { private set; get; }
 
         private bool m_IsModal = false;
