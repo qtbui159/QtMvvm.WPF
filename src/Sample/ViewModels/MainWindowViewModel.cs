@@ -38,7 +38,7 @@ namespace Example.ViewModel
 
         private void RaiseShowMessageBoxCommand()
         {
-           var dialogRequest= DialogManager.Build("ViewA", true);
+           var dialogRequest= DialogManager.Build("ViewA", true).SetWindowStartupLocation(System.Windows.WindowStartupLocation.CenterScreen).SetWidthAndHeight(300,300);
             dialogRequest.Raise();
             if (dialogRequest.DialogInformation.Confirm == true)
             {
