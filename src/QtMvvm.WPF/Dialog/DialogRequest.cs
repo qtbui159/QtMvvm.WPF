@@ -12,111 +12,6 @@ namespace QtMvvm.WPF.Dialog
     {
         #region 属性
 
-        /// <summary>
-        /// 窗口标签
-        /// </summary>
-        public String Title
-        {
-            get
-            {
-                return InnerWindow.Title;
-            }
-            set
-            {
-                InnerWindow.Title = value;
-            }
-        }
-
-        /// <summary>
-        /// 获取或设置高度
-        /// </summary>
-        public double Height
-        {
-            get
-            {
-                return InnerWindow.Height;
-            }
-            set
-            {
-                InnerWindow.Height = value;
-            }
-        }
-
-        /// <summary>
-        /// 获取或设置宽度
-        /// </summary>
-        public double Width
-        {
-            get
-            {
-                return InnerWindow.Width;
-            }
-            set
-            {
-                InnerWindow.Width = value;
-            }
-        }
-
-
-        /// <summary>
-        /// 获取或设置窗口首次显示时的位置。
-        /// </summary>
-        public bool ShowInTaskbar
-        {
-            get
-            {
-                return InnerWindow.ShowInTaskbar;
-            }
-            set
-            {
-                InnerWindow.ShowInTaskbar = value;
-            }
-        }
-
-        /// <summary>
-        ///  获取或设置窗口首次显示时的位置
-        /// </summary>
-        public WindowStartupLocation WindowStartupLocation
-        {
-            get
-            {
-                return InnerWindow.WindowStartupLocation;
-            }
-            set
-            {
-                InnerWindow.WindowStartupLocation = value;
-            }
-        }
-
-        /// <summary>
-        ///  获取或设置一个值，该值指示窗口的工作区是否支持透明。
-        /// </summary>
-        public bool AllowsTransparency
-        {
-            get
-            {
-                return InnerWindow.AllowsTransparency;
-            }
-            set
-            {
-                InnerWindow.AllowsTransparency = value;
-            }
-        }
-
-
-        public Window Owner
-        {
-            get
-            {
-                return InnerWindow.Owner;
-            }
-            set
-            {
-                InnerWindow.Owner = value;
-            }
-        }
-
-
 
         #endregion
 
@@ -186,9 +81,50 @@ namespace QtMvvm.WPF.Dialog
         /// </summary>
         /// <param name="sizeToContent"></param>
         /// <returns></returns>
-        public DialogRequest SizeToContent(SizeToContent sizeToContent)
+        public DialogRequest SetSizeToContent(SizeToContent sizeToContent)
         {
             InnerWindow.SizeToContent = sizeToContent;
+            return this;
+        }
+
+        public DialogRequest SetOwner(Window window)
+        {
+            InnerWindow.Owner = window;
+            return this;
+        }
+
+        /// <summary>
+        ///  获取或设置窗口首次显示时的位置
+        /// </summary>
+        /// <param name="windowStartupLocation"></param>
+        /// <returns></returns>
+        public DialogRequest SetWindowStartupLocation(WindowStartupLocation windowStartupLocation)
+        {
+            InnerWindow.WindowStartupLocation = windowStartupLocation;
+            return this;
+        }
+
+        /// <summary>
+        /// 设置窗口的宽度和高度
+        /// </summary>
+        /// <param name="width"></param>
+        /// <param name="height"></param>
+        /// <returns></returns>
+        public DialogRequest SetWidthAndHeight(double width, double height)
+        {
+            InnerWindow.Width = width;
+            InnerWindow.Height = height;
+            return this;
+        }
+
+        /// <summary>
+        /// 设置窗口标题
+        /// </summary>
+        /// <param name="title"></param>
+        /// <returns></returns>
+        public DialogRequest SetTitle(string title)
+        {
+            InnerWindow.Title = title;
             return this;
         }
     }
