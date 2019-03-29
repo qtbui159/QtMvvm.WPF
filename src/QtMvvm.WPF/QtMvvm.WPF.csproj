@@ -9,6 +9,8 @@
 灵感来源为Prism</Description>
     <PackageProjectUrl>https://github.com/qtbui159/QtMvvm.WPF</PackageProjectUrl>
     <PackageReleaseNotes>V0.0.1 Have fun</PackageReleaseNotes>
+    <PackageTags>WPF Mvvm dotnet Qt</PackageTags>
+    <Authors>qtbui159 qidong</Authors>
 
   </PropertyGroup>
 
